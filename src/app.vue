@@ -1,27 +1,25 @@
 <template>
-  <div class="index-wrap">
-      <p>hello vue</p>
-      <img src="./assets/image/logo.svg">
-  </div>
+   <div>
+       <NavBar></NavBar>
+       <router-view></router-view>
+   </div>
 </template>
 
 <script>
+import NavBar from '@/components/nav';
+
 export default {
   name: 'app',
   data() {
     return {
     };
+  },
+  components: {
+    NavBar
   }
 };
 </script>
 
 <style lang="sass" scoped>
-.index-wrap {
-    color: red;
-    font-size: 40px;
-}
 
-.index-wrap img {
-    width: 200px;
-}
 </style>
