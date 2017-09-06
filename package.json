@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --open --config build/webpack.dev.js",
-    "build": "webpack --config build/webpack.prod.js"
+    "build": "webpack --config build/webpack.prod.js",
+    "mock": "node mock/index.js"
   },
   "dependencies": {
     "axios": "^0.16.0",
